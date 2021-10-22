@@ -1,3 +1,5 @@
+package LinkedList.SinglyLinkedList;
+
 public class SinglyLinkedlist{
     public ListNode head;
     static class ListNode{

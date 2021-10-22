@@ -1,3 +1,5 @@
+package LinkedList.SinglyLinkedList;
+
 public class InsertInSorted extends SinglyLinkedlist {
     
     // insert a node in a sorted linkedList 
