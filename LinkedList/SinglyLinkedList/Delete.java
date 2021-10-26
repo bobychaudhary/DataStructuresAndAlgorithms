@@ -13,14 +13,16 @@ public class Delete extends SinglyLinkedlist {
     }
 
     //delete last element
-    public ListNode deleteLast(){
-        if(head==null) return null;
-        ListNode second_last=head;
-        while(second_last.next.next!=null){
-            second_last=second_last.next;
-            second_last.next=null;
+    public ListNode deletLast(){
+        if(head==null || head.next==null){ return head; }
+        ListNode current=head;
+        ListNode previous=null;
+        while(current.next!=null){
+            previous=current;
+            current=current.next;
         }
-        return head;
+        previous.next=null;
+        return current;
     }
 
     //take value from user and add the element at the given position
