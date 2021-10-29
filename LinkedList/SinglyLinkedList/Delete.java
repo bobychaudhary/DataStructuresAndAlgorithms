@@ -69,6 +69,9 @@ public class Delete extends SinglyLinkedlist {
     
 
     public static void main(String[] args) {
+        Delete obj=new Delete();
+        obj.deleteFirst();
+        obj.deletLast();
         
     }
     
