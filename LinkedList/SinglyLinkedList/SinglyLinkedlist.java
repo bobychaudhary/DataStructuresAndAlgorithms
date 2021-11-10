@@ -54,10 +54,16 @@ public class SinglyLinkedlist{
             current=current.next;
         }
         System.out.println("null");
+    
     }
-
     public static void main(String[] args) {
         SinglyLinkedlist obj=new SinglyLinkedlist();
+        obj.insertFirst(10);
+        obj.insertFirst(20);
+        obj.insertFirst(30);
+        obj.insertFirst(40);
+        obj.insertFirst(50);
+        obj.display();
         
     }
 }
