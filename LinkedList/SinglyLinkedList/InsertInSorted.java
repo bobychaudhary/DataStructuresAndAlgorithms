@@ -1,4 +1,3 @@
-package LinkedList.SinglyLinkedList;
 
 public class InsertInSorted extends SinglyLinkedlist {
     
