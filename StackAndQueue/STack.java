@@ -1,5 +1,5 @@
 //It is a linear data structure used for storing the data in the form of linked list. 
-//stack is an ordered list in which insertion & deletion are done at one end, called otp.
+//stack is an ordered list in which insertion & deletion are done at one end, called top.
 
 // The last element inserted is the first one to be deleted called as "LIFO"
 //why stack and queue are important==>commonly used for tree traversal 
@@ -48,6 +48,7 @@ class Stack{
         length--;
         return result;
     }
+}
     public static void main(String[] args) {
         Stack stack=new Stack();
         stack.push(10);
