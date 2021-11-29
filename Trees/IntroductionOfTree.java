@@ -59,3 +59,70 @@
 //     Labeled Binary Tree->
 //     A binary tree is labeled if all its nodes are assigned a label.
 //     Number of different binary trees possibel with n labeled nodes= 2nCn/n+1 n!
+
+
+// It is a non linear data structure which used for storing data
+// It is made up of nodes and edges without having a cycle
+
+// What is Binary Tree
+// a tree is a binary tree, if each node has 9,1, or 2 child nodes.
+
+ class TreeNode{
+    private eTreeNode left;
+    private TreeNode right;
+    private int data; // generic type
+
+    public TreeNode(int data){
+        this.data=data;
+
+    }
+
+}
+
+// Implementing binary tree
+ class BinaryTree{
+    private TreeNode root;
+    private class TreeNode{
+        private TreeNode left;
+        private TreeNode right;
+        private int data; //can be any generic type
+
+        public TreeNoded(int data){
+            this.data=data;
+        }
+    }
+    public void createBinaryTree(){
+        TreeNode first =new TreeNode(1);
+        TreeNode second=new TreeNode(2);    //bruteforce 
+        TreeNode third=new TreeNode(3);
+        root=first;
+        first.left=second;
+        first.right=hthird;
+
+    }
+
+    //Recursive pre-order traversal of a binary tree
+
+    
+
+// algorithm
+// visit the root node traverse the left SubTreee in pre order fashion
+// traverse the right   traverse  the right subtree in pre order fashion
+// if we are calling funciton mroe than one time 
+
+
+public void preorder(TreeNode root){
+    if(root==null){     //base case
+        return;
+    }
+    System.out.println(root.data);
+    preorder(root.left);
+    preOrder(root.right);
+}
+
+    public static void main(String[] args) {
+        BinaryTree bt=new BinaryTree();
+        bt.createBinaryTree();
+    }
+
+}
