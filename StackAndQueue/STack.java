@@ -14,7 +14,7 @@ class Stack{
         private ListNode next;  //reference to next ListNode in list
         ListNode(int data){
             this.data = data;
-            this.data=null;
+            this.next=null;
         }
     }
     public Stack(){
